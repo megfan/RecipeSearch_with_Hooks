@@ -1,0 +1,53 @@
+.multiSearch{
+    width: 50vw;
+    margin: 5rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.MuiMenuItem-root {
+    font-size: 1.5rem !important;
+}
+.multiSearch .MuiFormControl-root{
+    flex-direction: row;
+    width: 40%;
+    justify-content: space-between;
+}
+
+.multiSearch__form label{
+    color: var(--white);
+    font-size: 2rem;
+}
+.multiSearch__form .MuiFormLabel-root.Mui-focused{
+    color: var(--main);
+}
+.multiSearch__form label + .MuiInput-formControl {
+    margin-top: 2rem;
+    width: 90%;
+}
+.multiSearch__form .MuiInput-underline:before{
+    border-bottom: 2px solid var(--white);
+}
+.multiSearch__form .MuiInput-underline:after, .MuiInput-underline:hover:not(.Mui-disabled):before{
+    border-bottom: var(--main);
+}
+.multiSearch__form .MuiSelect-select{
+    height: 3rem;
+    font-size: 3rem;
+    color: var(--white);
+    margin-top: 2rem;
+}
+.MuiList-root .MuiListItem-root.Mui-selected, .MuiList-root .MuiListItem-root.Mui-selected:hover {
+    background-color: var(--main);
+    color: white;
+    font-weight: 800;
+}
+.MuiList-root .MuiListItem-button:hover {
+    background-color: var(--main-light);
+}
+
+@media only screen and (max-width: 1280px) {
+    .multiSearch{width: 80%}
+    .multiSearch .MuiFormControl-root{width: 80%}
+    .multiSearch__form .MuiSelect-select{height: 2rem; font-size: 2rem; margin-top: 0rem}
+}

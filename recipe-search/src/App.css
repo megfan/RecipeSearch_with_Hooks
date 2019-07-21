@@ -1,0 +1,101 @@
+
+.App {
+  text-align: center;
+}
+.header{
+  width: 101%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url('../src/images/kobby-mendez-idTwDKt2j2o-unsplash.jpg');
+  background-position: 50% 35%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+}
+h1{
+  font-size: 10rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+h1 span{
+  color: var(--main);
+}
+h2{
+  font-size: 3rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+  font-family: 'Dosis', sans-serif;
+  margin-bottom: 10vh;
+}
+.header__search{
+  width: 50vw;
+  display:flex;
+  justify-content: center;
+}
+.search-form{
+  width: 100%;
+}
+.search-input{
+  width: 40%;
+  max-width: 50vw;
+  padding: 1rem;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid var(--white);
+  margin: 10px;
+  color: var(--white);
+  font-size: 2rem;
+  text-align: center;
+  transition: all .5s ease;
+}
+.search-input:focus{
+  width: 50%;
+  background: rgba(255,255,255,0.2);
+  border-bottom: 2px solid var(--white);
+}
+input[type="text"] { 
+  outline: none;
+}
+.search-button {
+  border: none;
+  background: var(--main);
+  width: 5rem;
+  height: 5rem;
+  border-radius: 100px;
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--white);
+  transition: all .5s ease;
+  -webkit-box-shadow: 0px 10px 30px -5px rgba(0,0,0,0.1);
+  -moz-box-shadow: 0px 10px 30px -5px rgba(0,0,0,0.1);
+  box-shadow: 0px 10px 30px -5px rgba(0,0,0,0.1);
+}
+.search-button:hover{
+  -webkit-box-shadow: 0px 10px 29px 4px rgba(0,0,0,0.13);
+  -moz-box-shadow: 0px 10px 29px 4px rgba(0,0,0,0.13);
+  box-shadow: 0px 10px 29px 4px rgba(0,0,0,0.13);
+  color: var(--main-dark);
+  width: 5.2rem;
+  height: 5.2rem;
+}
+.footer{
+  height: 45vh;
+  width: 100%;
+  background-image: url('../src/images/sam-moghadam-EW8-YSIDgtk-unsplash.jpg');
+  background-position: 50% 35%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: var(--white);
+  padding-top: 5vh;
+}
+@media only screen and (max-width: 780px) {
+  h1{font-size: 5rem; line-height: 60px}
+  h2{margin: 20px 50px; font-size: 2rem}
+  .header{background-position: 90% 35%}
+  .header__search{width: 80vw}
+  .search-input{width: 80%}
+  .search-input:focus{width: 100%}
+}
