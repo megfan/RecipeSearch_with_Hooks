@@ -1,5 +1,5 @@
 # Recipe Search
-A recipe finder application in React.
+A recipe finder application in React with React Hooks.
 
 ## View:
 [Recipe Search](https://megfan.github.io/RecipeSearch_with_Hooks/)
