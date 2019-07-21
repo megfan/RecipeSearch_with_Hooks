@@ -37,7 +37,7 @@
     flex-direction: column;
     margin: 4rem;
     text-align: left;
-    font-size: 1.6rem;
+    font-size: 1.3rem;
 }
 .result-data h3{
     font-size: 2rem;
@@ -76,7 +76,9 @@
     border-left: 8px solid var(--main);
     top: 6px;
 }
-
+@media only screen and (max-width: 1400px) {
+    .result-content {min-width: 40vh;max-width: none;}
+  }
 @media only screen and (max-width: 780px) {
     .result{flex-direction: column}
     .result-content{max-width: 100%; width: 95%;}
